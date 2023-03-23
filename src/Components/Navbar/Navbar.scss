@@ -1,0 +1,122 @@
+/* Color Theme Swatches in Hex */
+$My-Color-Theme-1-hex: #3D3B94;
+$My-Color-Theme-2-hex: #AFAEFC;
+$My-Color-Theme-3-hex: #7775E0;
+$My-Color-Theme-4-hex: #999379;
+$My-Color-Theme-5-hex: #E0CE79;
+
+/* Color Theme Swatches in RGBA */
+$My-Color-Theme-1-rgba: rgba(61,59,148, 1);
+$My-Color-Theme-2-rgba: rgba(175,174,252, 1);
+$My-Color-Theme-3-rgba: rgba(119,117,224, 1);
+$My-Color-Theme-4-rgba: rgba(153,147,121, 1);
+$My-Color-Theme-5-rgba: rgba(224,206,121, 1);
+
+/* Color Theme Swatches in HSLA */
+$My-Color-Theme-1-hsla: hsla(241, 42, 40, 1);
+$My-Color-Theme-2-hsla: hsla(240, 92, 83, 1);
+$My-Color-Theme-3-hsla: hsla(241, 63, 66, 1);
+$My-Color-Theme-4-hsla: hsla(48, 13, 53, 1);
+$My-Color-Theme-5-hsla: hsla(49, 62, 67, 1);
+
+
+
+
+
+
+body{
+  height: 98.4vh;
+  background-image: linear-gradient(#aa6fed,#7495F7);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+
+.navbar {
+    position: relative;
+    display: flex;
+    top: 1rem;
+    border: 2px solid #7775E0;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #483b94da;
+    width: 100vw;
+    z-index: 1000;
+    box-shadow: 0 3px 5px rgba(43, 53, 65, 0.479);
+  
+    &-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+    }
+  
+    &-logo {
+      font-size: 2rem;
+      font-weight: 800;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+      border-radius: 5px;
+      
+
+      &:hover {
+        background: rgba(175, 174, 252, 0.555);
+      }
+  
+      a {
+        color: #fff;
+        text-decoration: none;
+      
+      }
+    }
+  
+    &-menu {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    &-item {
+
+      margin-left: 1rem;
+      padding: .5rem;
+      font-size: 1rem;
+      
+  
+      a {
+        height:60px;
+        width:60px;
+        color: #fff;
+        text-decoration: none;
+        width: 100%;
+        margin: 0;
+        padding: 0.5rem 0.5rem;
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: center;
+        font-size: 1rem;
+        
+  
+        &:hover {
+          transition-duration: 0.1s;
+          background-color: rgba(175,174,252, 1);
+        }
+        
+
+        .icon{
+          font-size: 2rem;
+        }
+      }
+    }
+  }

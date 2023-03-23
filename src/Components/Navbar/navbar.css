@@ -1,0 +1,124 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+body {
+  height: 98.4vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#aa6fed), to(#7495F7));
+  background-image: linear-gradient(#aa6fed, #7495F7);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 1rem;
+  border: 2px solid #7775E0;
+  border-radius: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #483b94da;
+  width: 100vw;
+  z-index: 1000;
+  -webkit-box-shadow: 0 3px 5px rgba(43, 53, 65, 0.479);
+          box-shadow: 0 3px 5px rgba(43, 53, 65, 0.479);
+}
+
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: 800;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.navbar-logo:hover {
+  background: rgba(175, 174, 252, 0.555);
+}
+
+.navbar-logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-left: 1rem;
+  padding: .5rem;
+  font-size: 1rem;
+}
+
+.navbar-item a {
+  height: 60px;
+  width: 60px;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+}
+
+.navbar-item a:hover {
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  background-color: #afaefc;
+}
+
+.navbar-item a .icon {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=Navbar.css.map */

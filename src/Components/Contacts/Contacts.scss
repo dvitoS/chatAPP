@@ -1,0 +1,14 @@
+.contacts{
+    display: flex;
+    background-color: #E0CE79;
+    margin: 1rem;
+    padding: .5rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .contactsTop{
+        display: flex;
+        align-items: center;
+        background-color: #AFAEFC;
+    }
+}

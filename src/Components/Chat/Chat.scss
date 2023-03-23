@@ -1,0 +1,20 @@
+.main{
+    height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: .5rem;
+    top: 8rem;
+    border-radius: 5px;
+
+    .container{
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 65%;
+        height: 80%;
+        display: flex;
+        background: white;
+    }
+}
