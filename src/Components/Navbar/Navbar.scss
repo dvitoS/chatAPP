@@ -25,7 +25,7 @@ $My-Color-Theme-5-hsla: hsla(49, 62, 67, 1);
 
 
 body{
-  height: 98.4vh;
+  height: 100vh;
   background-image: linear-gradient(#aa6fed,#7495F7);
   background-repeat: no-repeat;
   background-position: center;
@@ -37,13 +37,11 @@ body{
 .navbar {
     position: relative;
     display: flex;
-    top: 1rem;
     border: 2px solid #7775E0;
     border-radius: 5px;
     align-items: center;
     justify-content: space-between;
     background-color: #483b94da;
-    width: 100vw;
     z-index: 1000;
     box-shadow: 0 3px 5px rgba(43, 53, 65, 0.479);
   

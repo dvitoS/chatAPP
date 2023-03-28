@@ -2,7 +2,7 @@
 /* Color Theme Swatches in RGBA */
 /* Color Theme Swatches in HSLA */
 body {
-  height: 98.4vh;
+  height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#aa6fed), to(#7495F7));
   background-image: linear-gradient(#aa6fed, #7495F7);
   background-repeat: no-repeat;
@@ -15,7 +15,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 1rem;
   border: 2px solid #7775E0;
   border-radius: 5px;
   -webkit-box-align: center;
@@ -25,7 +24,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #483b94da;
-  width: 100vw;
   z-index: 1000;
   -webkit-box-shadow: 0 3px 5px rgba(43, 53, 65, 0.479);
           box-shadow: 0 3px 5px rgba(43, 53, 65, 0.479);
