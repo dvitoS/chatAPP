@@ -1,5 +1,5 @@
 .main {
-  background-color: #9F9BEF;
+  background-color: #F2F2F2;
   height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,6 +21,8 @@
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  -webkit-box-shadow: 0 0 10px;
+          box-shadow: 0 0 10px;
 }
 
 .main .container .sidebar {
@@ -28,7 +30,7 @@
       -ms-flex: 1;
           flex: 1;
   border-right: 1px solid #200120;
-  background-color: #F5E490;
+  background-color: #181D26;
   height: 100%;
   width: 100%;
 }
@@ -40,7 +42,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #A89842;
+  background-color: #07090D;
   height: 50px;
   padding: 10px;
   -webkit-box-pack: justify;
@@ -90,19 +92,95 @@
   border-bottom: 1px solid grey;
 }
 
-.main .container .sidebar .search .userChat img {
+.main .container .sidebar .search .searchForm input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.main .container .sidebar .search .searchForm input::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+.main .container .sidebar .search .searchForm input:-ms-input-placeholder {
+  color: lightgray;
+}
+
+.main .container .sidebar .search .searchForm input::-ms-input-placeholder {
+  color: lightgray;
+}
+
+.main .container .sidebar .search .searchForm input::placeholder {
+  color: lightgray;
+}
+
+.main .container .sidebar .userChat {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.main .container .sidebar .userChat:hover {
+  background-color: #515459;
+}
+
+.main .container .sidebar .userChat img {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .container .sidebar .userChat .userChatInfo span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.main .container .sidebar .userChat .userChatInfo p {
+  font-size: 14px;
+  color: white;
 }
 
 .main .container .mainbar {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+
+.main .container .mainbar .chatInfo {
+  height: 50px;
+  background-color: #181D26;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
-  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  color: white;
+}
+
+.main .container .mainbar .chatIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.main .container .mainbar .chatIcons .img {
+  height: 24px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=Chat.css.map */

@@ -1,9 +1,10 @@
 .main{
-    background-color: #9F9BEF;
+    background-color: #F2F2F2;
     height: 80vh;
     display:flex;
     align-items: center;
     justify-content: center;
+    
 
     .container{
         border: 1px solid white;
@@ -12,11 +13,12 @@
         height: 80%;
         display: flex;
         overflow: hidden;
+        box-shadow: 0 0 10px;
 
         .sidebar{
             flex:1;
             border-right: 1px solid rgb(32, 1, 32);
-            background-color: #F5E490 ;
+            background-color: #181D26 ;
             height: 100%;
             width: 100%;
             
@@ -25,7 +27,7 @@
             .topbar{
                 display: flex;
                 align-items: center;
-                background-color: #A89842;
+                background-color: #07090D;
                 height: 50px;
                 padding: 10px;
                 justify-content: space-between;
@@ -68,24 +70,76 @@
                 .searchForm{
                     
                     input{
+                        background-color: transparent;
+                        border: none;
+                        color: rgb(255, 255, 255);
+                        outline: none;
 
+                        &::placeholder{
+                            color: lightgray;
+                        }
                     }
                 }
 
-                .userChat{
-                    img{
-                        width: 50px;
-                        height: 50px;
+               
+            }
+            .userChat{
+                padding:10px;
+                display: flex;
+                align-items: center;
+                gap:10px;
+                cursor: pointer;
+                color: white;
+
+                &:hover{
+                    background-color: #515459;
+                }
+                    
+                img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit:cover;
+                }
+
+                .userChatInfo{
+                    span{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    p{
+                        font-size: 14px;
+                        color: white;
                     }
                 }
             }
+
+            
         }
         
         .mainbar{
             flex:2;
-            display: flex;
-            width: 70%;
-            height: 100%;
+            
+
+            .chatInfo{
+                height:50px;
+                background-color: #181D26;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                color:white;
+            }
+
+            .chatIcons{
+                display: flex;
+                gap: 10px;
+
+                .img{
+                    height:24px;
+                    cursor:pointer;
+                }
+            }
             
         }
         
