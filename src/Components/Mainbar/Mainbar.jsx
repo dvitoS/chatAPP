@@ -2,6 +2,8 @@ import React from "react";
 import {BsPersonFillAdd} from 'react-icons/bs';
 import {MdMoreVert} from 'react-icons/md';
 import Messages from '../Messages/Messages';
+import Input from '../Messages/Input';
+
 
 const Mainbar = () => {
     return(
@@ -14,6 +16,7 @@ const Mainbar = () => {
                 </div>
             </div>
             <Messages />
+            <Input />
         </div>
     )
 }

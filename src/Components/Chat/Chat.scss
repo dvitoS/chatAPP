@@ -17,7 +17,6 @@
 
         .sidebar{
             flex:1;
-            border-right: 1px solid rgb(32, 1, 32);
             background-color: #181D26 ;
             height: 100%;
             width: 100%;
@@ -140,6 +139,98 @@
                     cursor:pointer;
                 }
             }
+
+            .messages{
+                color: rgb(0, 0, 0);
+                padding: 18px 20px;
+                line-height: 26px;
+                font-size: 16px;
+                border-radius: 7px;
+                margin-bottom: 30px;
+                width: 90%;
+                position: relative;
+                height: calc(100% - 205px);
+
+
+                .message{
+                    display: flex;
+                    gap: 20px;
+
+                    .messageInfo{
+                        img{
+                            width:40px;
+                            height:40px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .messageContent{
+                        img{
+                            width: 50%;
+                        }
+                    }
+                }
+      
+            }
+
+            .input{
+                height:50px;
+                background-color:#515459;
+                border: none;
+                outline: none;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+
+                input{
+                    width:100%;
+                    border: none;
+                    outline: none;
+                    color:#181D26;
+                    font-size: 18px;
+                    height: 36px;
+                    border-radius: 5px;
+                    box-shadow: 0px 10px 17px -4px rgba(0,0,0,0.64);
+
+                    &::placeholder{
+                        color: #515459;
+                        padding: 5px;
+                    }
+                }
+                
+                .send{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    .img{
+                        height: 28px;
+                        width: 24px;
+                        padding: 5px;
+                        color: white;  
+                    }
+
+                    .button{
+                        color: #5a58ac;
+                        border: none;
+                        padding: none;
+                        outline: none;
+                        cursor:pointer;
+                        border-radius: 5px;
+                        box-shadow: 0px 10px 17px -4px rgba(0,0,0,0.64);
+
+                        .imgbtn{
+                            height: 28px;
+                            width: 24px;
+                            padding: 5px;
+                            color: rgb(88, 88, 88);
+                        }
+                    }
+                }
+                }
             
         }
         
