@@ -1,0 +1,89 @@
+.formContainer {
+  background-color: #6b6bcf;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formContainer .formWrapper {
+  background-color: #515459;
+  padding: 20px 60px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formContainer .formWrapper .logo {
+  color: #6b6bcf;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.formContainer .formWrapper .title {
+  color: black;
+  font-size: 12px;
+}
+
+.formContainer .formWrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  padding: 20px 60px;
+  border-radius: 10px;
+}
+
+.formContainer .formWrapper form input {
+  padding: 15px;
+  border: none;
+  width: 250px;
+  border-bottom: 1px solid #181D26;
+}
+
+.formContainer .formWrapper form input::-webkit-input-placeholder {
+  color: #626364;
+}
+
+.formContainer .formWrapper form input:-ms-input-placeholder {
+  color: #626364;
+}
+
+.formContainer .formWrapper form input::-ms-input-placeholder {
+  color: #626364;
+}
+
+.formContainer .formWrapper form input::placeholder {
+  color: #626364;
+}
+
+.formContainer .formWrapper form button {
+  background-color: aliceblue;
+  color: white;
+}
+
+.formContainer .formWrapper p {
+  color: #9a9acc;
+  font-size: 12px;
+  margin: 10px;
+}
+/*# sourceMappingURL=Register.css.map */
