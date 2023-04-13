@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import Register from '../src/Register/Register';
+import Login from '../src/Login/Login';
 import Home from './Components/Home/Home';
 import Chat from './Components/Chat/Chat';
 import Navbar from './Components/Navbar/Navbar';
@@ -19,6 +21,8 @@ const App = () => {
           <Route path="/chat" element={<Chat />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="Register" element={<Register/>}/>
+          <Route path="Login" element={<Login/>}/>
         </Routes>
       </div>
     </>

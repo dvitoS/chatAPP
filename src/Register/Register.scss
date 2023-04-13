@@ -15,14 +15,14 @@
         align-items: center;
 
         .logo{
-            color:rgb(107, 107, 207);
+            color:rgb(255, 255, 255);
             font-weight: bold;
             font-size: 25px;
         }
 
         .title{
-            color: black;
-            font-size: 12px;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
         }
         form{
             display: flex;
@@ -44,8 +44,29 @@
 
             button{
                 background-color: aliceblue;
-                color: white;
+                color: rgb(0, 0, 0);
+                padding: 10px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
             }
+
+            label{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #999595;
+                font-size: 12px;
+                cursor: pointer;
+
+                img{
+                    height: 40px;
+                    width: 40px;
+                }
+
+            } 
+               
+            
         }
 
         p{

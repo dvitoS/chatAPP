@@ -30,14 +30,14 @@
 }
 
 .formContainer .formWrapper .logo {
-  color: #6b6bcf;
+  color: white;
   font-weight: bold;
   font-size: 25px;
 }
 
 .formContainer .formWrapper .title {
-  color: black;
-  font-size: 12px;
+  color: white;
+  font-size: 15px;
 }
 
 .formContainer .formWrapper form {
@@ -78,7 +78,29 @@
 
 .formContainer .formWrapper form button {
   background-color: aliceblue;
-  color: white;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.formContainer .formWrapper form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: #999595;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.formContainer .formWrapper form label img {
+  height: 40px;
+  width: 40px;
 }
 
 .formContainer .formWrapper p {
