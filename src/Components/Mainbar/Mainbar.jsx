@@ -11,8 +11,8 @@ const Mainbar = () => {
             <div className="chatInfo">
                 <span>Doris</span>
                 <div className="chatIcons">
-                    <BsPersonFillAdd class="img"/>
-                    <MdMoreVert class="img"/>
+                    <BsPersonFillAdd className="img"/>
+                    <MdMoreVert className="img"/>
                 </div>
             </div>
             <Messages />
