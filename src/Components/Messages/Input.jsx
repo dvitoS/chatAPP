@@ -5,16 +5,16 @@ import {MdAttachFile} from 'react-icons/md';
 
 const Input = () =>{
     return(
-        <div class="input">
+        <div className="input">
             <input type="text" placeholder="type something..."/>
             <div className="send">
-                <MdAttachFile class="img"/>
+                <MdAttachFile className="img"/>
                 <input type="file" style={{display:"none"}} id="file" />
                 <label htmlFor="file">
-                    <FcAddImage class="img"/>
+                    <FcAddImage className="img"/>
                 </label>
-                <button class="button">
-                    <BsSend class="imgbtn" />
+                <button className="button">
+                    <BsSend className="imgbtn" />
                 </button>
             </div>
         </div>
