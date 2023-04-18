@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Register from '../../Register/Register';
 import Login from '../../Login/Login';
 import './Home.css';
@@ -8,7 +8,7 @@ import './Home.css';
 
 const Home = () =>{
     return(
-        <div class="container">
+        <div className="container">
             <Routes>
                 <Route path="Register" element={<Register/>}/>
                 <Route path="Login" element={<Login/>}/>

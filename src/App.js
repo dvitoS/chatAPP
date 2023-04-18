@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Register from '../src/Register/Register';
 import Login from '../src/Login/Login';
 import Home from './Components/Home/Home';
@@ -15,13 +15,23 @@ import './App.css';
 const App = () => {
 
   const {currentUser} = useContext(AuthContext)
-  console.log(currentUser);
+  
+  const ProtectedRoute = ({children}) =>{
+    if(!currentUser){
+      return <Navigate to="/login" />
+    }
+  }
+
+
   return(
     <>
       <Navbar />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/settings" element={<Settings />} />
