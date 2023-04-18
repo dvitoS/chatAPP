@@ -18,30 +18,30 @@ function Navbar() {
       </div>
       <div className="navbar-container">
         <ul className="navbar-menu">
-          <li className="navbar-item">
-              <CustomLink to="/chat">
+          <div className="navbar-item">
+              <CustomLink  to="/chat">
                 <FcComments className='icon' />
                  Chat
               </CustomLink>
-          </li>
-          <li className="navbar-item">
+          </div>
+          <div className="navbar-item">
               <CustomLink to="/contacts">
                 <FcContacts className='icon' />
                 Contacts
               </CustomLink>              
-          </li>
-          <li className="navbar-item">
+          </div>
+          <div className="navbar-item">
               <CustomLink to="/settings">
                 <FcSettings className='icon' />
                 Settings
               </CustomLink>
-          </li>
-          <li className="navbar-item">
+          </div>
+          <div className="navbar-item">
               <CustomLink to="/login">
                 <FiLogIn className='icon' />
                 Login
               </CustomLink>
-          </li>
+          </div>
         </ul>
       </div>
     </nav>

@@ -13,7 +13,6 @@ const Chat = () =>{
                 <Sidebar />
                 <Mainbar />
             </div>
-            
         </div>
     )
 }

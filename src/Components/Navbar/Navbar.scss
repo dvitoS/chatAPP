@@ -25,7 +25,6 @@ $My-Color-Theme-5-hsla: hsla(49, 62, 67, 1);
 
 
 body{
-  height: 100vh;
   background-image: linear-gradient(#aa6fed,#7495F7);
   background-repeat: no-repeat;
   background-position: center;
@@ -35,19 +34,20 @@ body{
 
 
 .navbar {
+    height: 70px;
     position: relative;
     display: flex;
     border: 2px solid #7775E0;
     border-radius: 5px;
-    align-items: center;
-    justify-content: space-between;
+    align-items:center;
+    justify-content: space-around;
     background-color: #483b94da;
     z-index: 1000;
     box-shadow: 0 3px 5px rgba(43, 53, 65, 0.479);
   
     &-container {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       width: 100%;
       max-width: 1200px;
@@ -59,7 +59,7 @@ body{
       cursor: pointer;
       align-items: center;
       justify-content: center;
-      margin: 1rem;
+      margin: 0;
       border-radius: 5px;
       
 
