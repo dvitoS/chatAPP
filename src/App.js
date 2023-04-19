@@ -14,11 +14,11 @@ import './App.css';
 
 const App = () => {
 
-  const {currentUser} = useContext(AuthContext)
+  const {currentUser} = useContext(AuthContext);
   
   const ProtectedRoute = ({children}) =>{
     if(!currentUser){
-      return <Navigate to="/login" />
+      return <Navigate to="/login" />;
     }
 
     return children;
@@ -27,7 +27,6 @@ const App = () => {
 
   return(
     <>
-      <Navbar />
       <div className="container">
         <Routes>
           <Route path="/"
@@ -35,7 +34,9 @@ const App = () => {
             element={
               <ProtectedRoute>
                 <Home />
-              </ProtectedRoute>} />
+              </ProtectedRoute>
+            } 
+          />
           <Route path="/chat" element={<Chat />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/settings" element={<Settings />} />

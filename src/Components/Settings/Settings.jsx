@@ -1,10 +1,15 @@
 import React from "react";
+import Navbar from "../Navbar/Navbar";
+
 
 const Settings = () =>{
     return(
-        <div className="settings">
-            <h1>Settings</h1>
-        </div>
+        <>
+            <Navbar />
+            <div className="settings">
+                <h1>Settings</h1>
+            </div>
+        </>
     );
 }
 
