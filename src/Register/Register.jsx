@@ -3,6 +3,7 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { auth, db, storage } from "../firebase";
 import { doc, setDoc } from "firebase/firestore"; 
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './Register.css';
@@ -23,50 +24,43 @@ const Register = () =>{
         const file = e.target[3].files[0];
 
         try{
-            const res = await createUserWithEmailAndPassword(auth, email, password)
-            
+            const res = await createUserWithEmailAndPassword(auth, email, password);           
             const storageRef = ref(storage, displayName);
-
-            const uploadTask = uploadBytesResumable(storageRef, file);
-
-            // Register three observers:
-           
-            uploadTask.on(
-                
+            const uploadTask = await uploadBytesResumable(storageRef, file);
+   
+            uploadTask.on(               
               (error) => {
                 setErr(true);          
               }, 
-
               () => {
-                getDownloadURL(uploadTask.snapshot.ref).then( async(downloadURL) => {
-                    await updateProfile(res.user,{
-                        displayName,
-                        photoURL: downloadURL,
-                    });
+                    getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
+                        await updateProfile(res.user, {
+                            displayName,
+                            photoURL: downloadURL,
+                        });
 
-                    await setDoc(doc(db, "users", res.user.uid),{
-                        uid: res.user.uid,
-                        displayName,
-                        email,
-                        photoURL: downloadURL,
-                    });
+                        await setDoc(doc(db, "users", res.user.uid), {
+                            uid: res.user.uid,
+                            displayName,
+                            email,
+                            photoURL: downloadURL,
+                          });
 
-                    await setDoc(doc(db, "userChats", res.user.uid),{});
-                    navigate("/");
-                });
-              }
+                        await setDoc(doc(db, "userChats", res.user.uid),{});
+                        navigate("/");                         
+                    });
+                }
             );
               
-
         } catch(err) {  
-            setErr(true);
+          setErr(true);
         }
     };
 
     return(
         <div className="formContainer">
             <div className="formWrapper">
-                <span className="logo">VeryChat</span>
+                <span className="logo">VeryApp</span>
                 <span className="title">Register</span>
                 <form onSubmit={handleSubmit}>
                     <input type="text" placeholder="display name" />
@@ -80,6 +74,11 @@ const Register = () =>{
                     <button>Sign up</button>
                     {err && <span>Something went wrong</span>}
                 </form>
+                <p>Already have an account?
+                    <Link to="/login">
+                        Log in here
+                    </Link>
+                </p>
             </div>
         </div>
     )

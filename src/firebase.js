@@ -8,6 +8,7 @@ import { getFirestore} from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyBRnebgoR_rTadHf0TGG4wlMpiuCakNuH8",
   authDomain: "verychat-ec3e6.firebaseapp.com",
+  databaseURL: "https://verychat-ec3e6-default-rtdb.firebaseio.com",
   projectId: "verychat-ec3e6",
   storageBucket: "verychat-ec3e6.appspot.com",
   messagingSenderId: "996817046436",

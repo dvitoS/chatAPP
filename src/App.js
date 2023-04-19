@@ -20,6 +20,8 @@ const App = () => {
     if(!currentUser){
       return <Navigate to="/login" />
     }
+
+    return children;
   }
 
 
@@ -28,10 +30,12 @@ const App = () => {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route path="/" element={
-            <ProtectedRoute>
-              <Home />
-            </ProtectedRoute>} />
+          <Route path="/"
+            index
+            element={
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/settings" element={<Settings />} />
