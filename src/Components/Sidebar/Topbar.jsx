@@ -12,7 +12,7 @@ const Topbar = () => {
             <span className="logo">VeryApp</span>
             <div className="user">
                 <img src={currentUser.photoURL} alt="" />
-                <span>Vito</span>
+                <span>{currentUser.displayName}</span>
                 <button onClick={() => signOut(auth)}>Logout</button>              
             </div>  
         </div>

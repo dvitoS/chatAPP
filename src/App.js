@@ -4,7 +4,6 @@ import Register from '../src/Register/Register';
 import Login from '../src/Login/Login';
 import Home from './Components/Home/Home';
 import Chat from './Components/Chat/Chat';
-import Navbar from './Components/Navbar/Navbar';
 import Contacts from './Components/Contacts/Contacts';
 import Settings from './Components/Settings/Settings';
 import { AuthContext } from './context/AuthContext';
@@ -29,19 +28,20 @@ const App = () => {
     <>
       <div className="container">
         <Routes>
-          <Route path="/"
-            index
-            element={
-              <ProtectedRoute>
+          <Route path="/" element={<ProtectedRoute>
                 <Home />
-              </ProtectedRoute>
-            } 
-          />
-          <Route path="/chat" element={<Chat />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/register" element={<Register/>}/>
-          <Route path="/login" element={<Login/>}/>
+            </ProtectedRoute>}/>
+          <Route path="chat" element={<ProtectedRoute>
+            <Chat />
+          </ProtectedRoute>} />
+          <Route path="contacts" element={<ProtectedRoute>
+            <Contacts />
+          </ProtectedRoute>} />
+          <Route path="settings" element={<ProtectedRoute>
+            <Settings />
+          </ProtectedRoute>} />
+          <Route path="register" element={<Register/>}/>
+          <Route path="login" element={<Login/>}/>
         </Routes>
       </div>
     </>
