@@ -28,7 +28,7 @@ const App = () => {
     <>
       <div className="container">
         <Routes>
-          <Route path="/" element={<ProtectedRoute>
+          <Route path="*" element={<ProtectedRoute>
                 <Home />
             </ProtectedRoute>}/>
           <Route path="chat" element={<ProtectedRoute>
