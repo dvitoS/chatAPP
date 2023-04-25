@@ -11,8 +11,7 @@ const Chat = () =>{
         <>
         <Navbar />
             <div className="main">
-                <div className="container">
-                    
+                <div className="container">       
                     <Sidebar />
                     <Mainbar />
                 </div>
