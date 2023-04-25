@@ -8,4 +8,21 @@ html {
   margin: 0;
   padding: 0;
 }
+
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #bdcdff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #38407a;
+  border-radius: 10px;
+  border: 0px solid #7b7eea;
+}
+
 /*# sourceMappingURL=Home.css.map */

@@ -34,14 +34,14 @@ body{
 
 
 .navbar {
-    height: 70px;
+    height: 5vh;
     position: relative;
     display: flex;
     border-radius: 0 0 5px;
     align-items:center;
     justify-content: space-around;
     background-color: #034E94;
-    z-index: 1000;
+    z-index: 20;
     box-shadow: 0 3px 3px rgba(43, 53, 65, 0.479);
     margin:0;
     padding: 5px;
@@ -50,8 +50,7 @@ body{
       display: flex;
       justify-content: space-around;
       align-items: center;
-      width: 100%;
-      max-width: 1200px;
+      max-width: 1440px;
     }
   
     &-logo {

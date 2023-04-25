@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-  height: 70px;
+  height: 5vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,7 +22,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #034E94;
-  z-index: 1000;
+  z-index: 20;
   -webkit-box-shadow: 0 3px 3px rgba(43, 53, 65, 0.479);
           box-shadow: 0 3px 3px rgba(43, 53, 65, 0.479);
   margin: 0;
@@ -38,8 +38,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
 }
 
 .navbar-logo {
