@@ -1,0 +1,115 @@
+.containersidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+}
+
+.containersidebar h2 {
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+.containersidebar .contentboxsidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  -webkit-box-shadow: 5px;
+          box-shadow: 5px;
+  height: 100%;
+  width: 20%;
+  background-color: #034E94;
+}
+
+.containersidebar .contentboxsidebar .searchsidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+}
+
+.containersidebar .contentboxsidebar .searchsidebar input {
+  padding: 5px;
+  margin: 10px;
+  width: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  outline: none;
+  font-size: 18px;
+}
+
+.containersidebar .contentboxsidebar .searchsidebar input::-webkit-input-placeholder {
+  color: #1e4a9b;
+}
+
+.containersidebar .contentboxsidebar .searchsidebar input:-ms-input-placeholder {
+  color: #1e4a9b;
+}
+
+.containersidebar .contentboxsidebar .searchsidebar input::-ms-input-placeholder {
+  color: #1e4a9b;
+}
+
+.containersidebar .contentboxsidebar .searchsidebar input::placeholder {
+  color: #1e4a9b;
+}
+
+.containersidebar .contentboxsidebar .cardcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.containersidebar .contentboxsidebar .cardcontainer .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+  gap: 5px;
+  height: 50px;
+  width: 95%;
+  border-radius: 5px;
+  border: 1px solid #FFAD56;
+  background-color: #FFAD56;
+  color: #030D40;
+  font-weight: 500;
+}
+
+.containersidebar .contentboxsidebar .cardcontainer .card:hover {
+  background-color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Homesidebar.css.map */

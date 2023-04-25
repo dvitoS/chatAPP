@@ -4,7 +4,7 @@ import {FcAddImage} from 'react-icons/fc';
 import {MdAttachFile} from 'react-icons/md';
 import { AuthContext } from "../../context/AuthContext";
 import { ChatContext } from "../../context/ChatContext";
-import { Timestamp, arrayUnion, doc, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
+import { Timestamp, arrayUnion, doc, serverTimestamp, updateDoc } from "firebase/firestore";
 import { v4 as uuid } from "uuid";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { db, storage } from "../../firebase";
@@ -12,7 +12,6 @@ import { db, storage } from "../../firebase";
 const Input = () =>{
     const [text,setText] = useState("");
     const [img,setImg] = useState(null);
-    const [date,setDate] = useState(null);
 
     const {currentUser} = useContext(AuthContext);
     const {data} = useContext(ChatContext);

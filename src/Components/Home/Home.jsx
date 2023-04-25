@@ -4,19 +4,19 @@ import Register from '../../Register/Register';
 import Login from '../../Login/Login';
 import './Home.css';
 import Navbar from "../Navbar/Navbar";
+import Homesidebar from "../HomeSidebar/Homesidebar";
 
 
 const Home = () =>{
     return(
-        <>
-        <Navbar />
-            <div className="container">
-                <Routes>
-                    <Route path="Register" element={<Register/>}/>
-                    <Route path="Login" element={<Login/>}/>
-                </Routes>
+            <div className="container">   
+                <Navbar />        
+                    <Routes>
+                        <Route path="Register" element={<Register/>}/>
+                        <Route path="Login" element={<Login/>}/>
+                    </Routes>
+                    <Homesidebar />
             </div>
-        </>
     )
 }
 

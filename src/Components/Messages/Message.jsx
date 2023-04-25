@@ -15,11 +15,14 @@ const Message = ({message}) =>{
     return(
         <div ref={ref} className={`message ${message.senderId === currentUser.uid && "owner"}`}>
             <div className="messageInfo">
-                <img src={
-                    message.senderId === currentUser.uid 
-                    ? currentUser.photoURL 
-                    : data.userEvent.photoURL} 
-                    alt="" />
+            <img
+                  src={
+                    message.senderId === currentUser.uid
+                      ? currentUser.photoURL
+                      : data.user.photoURL
+                  }
+                  alt=""
+                />
                 <span>just sent</span>
             </div>
             <div className="messageContent">

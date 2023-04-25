@@ -45,8 +45,8 @@ const Search = () =>{
     };
 
 
-    const handleSelect = async (u) => {
-        dispatchEvent({type:"CHANGE_USER", payload: u});
+    const handleSelect = async () => {
+        
         // check if group (chat collection)exists. create new if doesn't
         const combinedId = 
             currentUser.uid > user.uid 

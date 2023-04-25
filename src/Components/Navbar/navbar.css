@@ -15,17 +15,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid #7775E0;
-  border-radius: 5px;
+  border-radius: 0 0 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #483b94da;
+  background-color: #034E94;
   z-index: 1000;
-  -webkit-box-shadow: 0 3px 5px rgba(43, 53, 65, 0.479);
-          box-shadow: 0 3px 5px rgba(43, 53, 65, 0.479);
+  -webkit-box-shadow: 0 3px 3px rgba(43, 53, 65, 0.479);
+          box-shadow: 0 3px 3px rgba(43, 53, 65, 0.479);
+  margin: 0;
+  padding: 5px;
 }
 
 .navbar-container {
