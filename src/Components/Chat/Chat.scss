@@ -184,7 +184,7 @@
                 display: flex;
                 gap: 10px;
 
-                .img{
+                img{
                     height:24px;
                     cursor:pointer;
                 }
@@ -300,10 +300,14 @@
                     align-items: center;
 
                     .img{
-                        height: 28px;
+                        height: 35px;
                         width: 24px;
                         padding: 5px;
-                        color: white;  
+                        color: white; 
+                        
+                        &:hover{
+                            cursor: pointer;
+                        }
                     }
 
                     .button{
