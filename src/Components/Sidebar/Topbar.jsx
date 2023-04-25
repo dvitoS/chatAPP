@@ -9,7 +9,7 @@ const Topbar = () => {
     const {currentUser} = useContext(AuthContext)
     return(
         <div className="topbar">
-            <span className="logo">VeryApp</span>
+            <span className="logo">Very</span>
             <div className="user">
                 <img src={currentUser.photoURL} alt="" />
                 <span>{currentUser.displayName}</span>

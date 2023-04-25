@@ -12,6 +12,7 @@ import { db, storage } from "../../firebase";
 const Input = () =>{
     const [text,setText] = useState("");
     const [img,setImg] = useState(null);
+    const [date,setDate] = useState(null);
 
     const {currentUser} = useContext(AuthContext);
     const {data} = useContext(ChatContext);
@@ -33,7 +34,7 @@ const Input = () =>{
                             messages: arrayUnion({
                                 id: uuid(),
                                 text,
-                                senderID: currentUser.uid,
+                                senderId: currentUser.uid,
                                 date: Timestamp.now(),
                                 img: downloadURL
                             }),
@@ -72,6 +73,7 @@ const Input = () =>{
 
         setText("");
         setImg(null);
+        
 
     };
 
@@ -91,7 +93,7 @@ const Input = () =>{
                 </button>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Input;

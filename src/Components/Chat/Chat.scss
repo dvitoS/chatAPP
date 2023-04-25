@@ -50,7 +50,7 @@
             .topbar{
                 display: flex;
                 align-items: center;
-                background-color: #07090D;
+                background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
                 height: 50px;
                 padding: 10px;
                 justify-content: space-between;
@@ -78,7 +78,7 @@
                     }
 
                     button{
-                        background-color: #F5E490;
+                        background-color: #ffffff;
                         color:#5a58ac;
                         font-size: 10px;
                         border:0px;
@@ -95,21 +95,26 @@
             }
 
             .search{
-                border-bottom: 1px solid grey;
+                border-bottom: 1px solid rgb(137, 150, 185);
 
                 .searchForm{
-                    border-bottom: 1px solid grey;
-                    height: 30px;
-                    background-color: rgba(255, 255, 255, 0.137);
+                    border-bottom: 1px solid rgb(137, 150, 185);
+                    height: 35px;
+                    padding:5px;
+                    background-color: rgba(255, 255, 255, 0);
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
 
                     input{
                         background-color: transparent;
                         border: none;
                         color: rgb(255, 255, 255);
                         outline: none;
+                        font-size: 18px;
 
                         &::placeholder{
-                            color: lightgray;
+                            color: rgb(255, 255, 255);
                         }
                     }
                 }
@@ -117,15 +122,21 @@
                
             }
             .userChat{
-                padding:10px;
+                padding:5px;
+                margin: 5px;
                 display: flex;
-                align-items: center;
+                align-items:center;
                 gap:10px;
                 cursor: pointer;
                 color: white;
+                background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+                border-radius: 10px;
+                border:solid 3px silver;
+
 
                 &:hover{
-                    background-color: #515459;
+                    color: rgb(219, 164, 61);
+                    border: solid 3px rgb(219, 164, 61);
                 }
                     
                 img{
@@ -158,7 +169,7 @@
 
             .chatInfo{
                 height:50px;
-                background-color: #181D26;
+                background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -274,7 +285,7 @@
                     box-shadow: 0px 10px 17px -4px rgba(0,0,0,0.64);
 
                     &::placeholder{
-                        color: #515459;
+                        color: #50555f;
                         padding: 5px;
                     }
                 }
