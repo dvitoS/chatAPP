@@ -4,7 +4,7 @@
 
 # VeryApp
 
-VeryApp is a web chat aplication project made for small userbase.
+VeryApp is a web chat aplication project made for small userbase in mind.
 It helps keeping people in touch whilst protecting users privacy. 
 
 VeryApp uses firebase for real time chat experience. 
